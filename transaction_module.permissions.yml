@@ -1,0 +1,11 @@
+add transaction entities:
+  title: 'Create new Transaction entities'
+
+administer transaction entities:
+  title: 'Administer Transaction entities'
+  description: 'Allow to access the administration form to configure Transaction entities.'
+  restrict access: true
+
+
+permission_callbacks:
+  - \Drupal\transaction_module\TransactionPermissions::generatePermissions
